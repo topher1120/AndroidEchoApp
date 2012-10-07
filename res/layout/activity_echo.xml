@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<EditText android:id="@+id/echoInput"
+	    android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+	    android:hint="enter text to echo"
+	    android:paddingBottom="5dp" >
+	    <requestFocus />
+	</EditText>
+	<Button android:id="@+id/submitButton" android:onClick="submitClicked"
+	    android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    android:layout_below="@id/echoInput" android:text="Submit"
+	    android:layout_alignLeft="@id/echoInput"
+	    android:paddingBottom="5dp" />
+	<EditText
+	    android:id="@+id/responseView"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/submitButton"
+	    android:inputType="textMultiLine" />
+
+</RelativeLayout>
