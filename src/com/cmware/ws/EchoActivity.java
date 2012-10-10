@@ -96,6 +96,7 @@ public class EchoActivity extends Activity {
         } catch (UnsupportedEncodingException e) {
         }
         try {
+            // TODO externalize the base URL somehow
             URL url = new URL("http://10.30.0.7:8080/EchoServer/echo?value=" + echoParamValue);
             return url;
         } catch (MalformedURLException e) {
